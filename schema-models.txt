@@ -1,0 +1,104 @@
+Account:
+{
+  "nickname": "string",
+  "balance": 0,
+  "rewards": 0,
+  "bill_ids": [
+    "string"
+  ],
+  "customer_id": "string",
+  "type": "Credit Card",
+  "_id": "string"
+}
+
+Bill:
+{
+  "payee": "string",
+  "upcoming_payment_date": "2016-04-09",
+  "creation_date": "2016-04-09",
+  "payment_date": "2016-04-09",
+  "nickname": "string",
+  "recurring_date": 0,
+  "_id": "string",
+  "payment_amount": 0,
+  "status": "pending"
+}
+
+Customer:
+{
+  "account_ids": [
+    "string"
+  ],
+  "address": {
+    "street_number": "string",
+    "state": "string",
+    "zip": "string",
+    "street_name": "string",
+    "city": "string"
+  },
+  "last_name": "string",
+  "first_name": "string",
+  "_id": "string"
+}
+
+Deposit:
+[
+  {
+    "medium": "balance",
+    "description": "string",
+    "payee_id": "string",
+    "amount": 0,
+    "_id": "string",
+    "transaction_date": "string",
+    "type": "p2p",
+    "status": "pending"
+  }
+]
+
+Marchant:
+[
+  {
+    "name": "string",
+    "address": {
+      "street_number": "string",
+      "state": "string",
+      "zip": "string",
+      "street_name": "string",
+      "city": "string"
+    },
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    },
+    "_id": "string"
+  }
+]
+
+Transfer:
+[
+  {
+    "medium": "balance",
+    "description": "string",
+    "payee_id": "string",
+    "amount": 0,
+    "_id": "string",
+    "transaction_date": "string",
+    "payer_id": "string",
+    "type": "p2p",
+    "status": "pending"
+  }
+]
+
+Withdrawal:
+[
+  {
+    "medium": "balance",
+    "description": "string",
+    "amount": 0,
+    "_id": "string",
+    "transaction_date": "string",
+    "payer_id": "string",
+    "type": "p2p",
+    "status": "pending"
+  }
+]
