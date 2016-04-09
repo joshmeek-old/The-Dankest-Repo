@@ -1,0 +1,18 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+</head>
+<body>
+<script type="text/javascript">
+    $.getJSON("data.json", function(data) {
+        console.log(data);
+		int i = 0;
+		$('body').append(data.results.length);
+		while ( i < data.results.length ) {
+			$('body').append(data.results[i].name);
+			i++;
+		};
+    });
+</script>
+</body>
+</html>

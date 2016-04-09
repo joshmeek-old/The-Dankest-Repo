@@ -1,0 +1,17 @@
+[
+  {
+    "name": "string",
+    "address": {
+      "street_number": "HelloFucker",
+      "state": "string",
+      "zip": "string",
+      "street_name": "string",
+      "city": "string"
+    },
+    "geocode": {
+      "lat": 0,
+      "lng": 0
+    },
+    "_id": "string"
+  }
+]
