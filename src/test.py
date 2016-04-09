@@ -1,7 +1,6 @@
 # This is written for PYTHON 3
 # Don't forget to install requests package
 
-import requests
 import json
 import urllib
 
