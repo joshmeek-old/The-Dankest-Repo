@@ -32,31 +32,31 @@ function grabJSON() {
 	//The main request object
 	var request = new XMLHttpRequest();
 
-	request.open("GET", "accounts.json", false);
+	request.open("GET", "_accounts.json", false);
    	request.send(null)
    	accounts_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "bills.json", false);
+   	request.open("GET", "_bills.json", false);
    	request.send(null)
    	bills_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "customers.json", false);
+   	request.open("GET", "_customers.json", false);
    	request.send(null)
    	customers_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "deposits.json", false);
+   	request.open("GET", "_deposits.json", false);
    	request.send(null)
    	deposits_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "merchants.json", false);
+   	request.open("GET", "_merchants.json", false);
    	request.send(null)
    	merchant_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "transfers.json", false);
+   	request.open("GET", "_transfers.json", false);
    	request.send(null)
    	transfers_data = JSON.parse(request.responseText);
 
-   	request.open("GET", "withdrawals.json", false);
+   	request.open("GET", "_withdrawals.json", false);
    	request.send(null)
    	withdrawals_data = JSON.parse(request.responseText);
 
