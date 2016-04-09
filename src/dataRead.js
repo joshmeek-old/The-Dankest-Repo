@@ -27,6 +27,34 @@ function print_data() {
 	console.log(withdrawals_data);
 }
 
+function get_accounts() {
+	return accounts_data;
+}
+
+function get_bills() {
+	return bills_data;
+ }
+ 
+function get_customers() {
+	return customers_data;
+}
+
+function get_deposits() {
+	return deposits_data;
+}
+
+function get_merchant() {
+	return merchant_data;
+}
+
+function get_transfers() {
+	return transfers_data;
+}
+
+function get_withdrawals() {
+	return withdrawals_data;
+}
+
 function grabJSON() {
 
 	//The main request object
