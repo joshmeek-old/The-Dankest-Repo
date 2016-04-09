@@ -6,12 +6,13 @@
 <script type="text/javascript">
     $.getJSON("data.json", function(data) {
         console.log(data);
-		int i = 0;
-		$('body').append(data.results.length);
-		while ( i < data.results.length ) {
+		var i = 0;
+		$('body').append("Hello");
+		while ( i < 100 ) {
 			$('body').append(data.results[i].name);
-			i++;
-		};
+			$('body').append("\n");
+			i++
+		}
     });
 </script>
 </body>
