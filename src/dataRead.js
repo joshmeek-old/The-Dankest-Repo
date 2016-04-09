@@ -17,34 +17,6 @@ var merchant_data;
 var transfers_data;
 var withdrawals_data;
 
-function save_ad(data) {
-	accounts_data = data;
-}
-
-function save_bd(data) {
-	bills_data = data;
-}
-
-function save_cd(data) {
-	customers_data = data;
-}
-
-function save_dd(data) {
-	deposits_data = data;
-}
-
-function save_md(data) {
-	merchant_data = data;
-}
-
-function save_td(data) {
-	transfers_data = data;
-}
-
-function save_wd(data) {
-	withdrawals_data = data;
-}
-
 function print_data() {
 	console.log(accounts_data);
 	console.log(bills_data);
@@ -57,43 +29,36 @@ function print_data() {
 
 function grabJSON() {
 
-	$.getJSON("accounts.json", function(data) {
-		console.log("accounts data read");
-		save_ad(data);
-	});
+	//The main request object
+	var request = new XMLHttpRequest();
 
-	$.getJSON("bills.json", function(data) {
-		console.log("bills data read");
-		save_bd(data);
-	});
+	request.open("GET", "accounts.json", false);
+   	request.send(null)
+   	accounts_data = JSON.parse(request.responseText);
 
-	$.getJSON("customers.json", function(data) {
-		console.log("customers data read");
-		save_cd(data);
-	});
+   	request.open("GET", "bills.json", false);
+   	request.send(null)
+   	bills_data = JSON.parse(request.responseText);
 
-	$.getJSON("deposits.json", function(data) {
-		console.log("deposits data read");
-		save_dd(data);
-	});
+   	request.open("GET", "customers.json", false);
+   	request.send(null)
+   	customers_data = JSON.parse(request.responseText);
 
-	$.getJSON("merchants.json", function(data) {
-		console.log("merchant data read");
-		save_md(data);
-	});
+   	request.open("GET", "deposits.json", false);
+   	request.send(null)
+   	deposits_data = JSON.parse(request.responseText);
 
-	$.getJSON("transfers.json", function(data) {
-		console.log("transfers data read");
-		save_td(data);
-	});
+   	request.open("GET", "merchants.json", false);
+   	request.send(null)
+   	merchant_data = JSON.parse(request.responseText);
 
-	$.getJSON("withdrawals.json", function(data) {
-		console.log("withdrawals data read");
-		save_wd(data);
-		print_data();
-	}).done(function() {
-		console.log("done here");
-	});
+   	request.open("GET", "transfers.json", false);
+   	request.send(null)
+   	transfers_data = JSON.parse(request.responseText);
+
+   	request.open("GET", "withdrawals.json", false);
+   	request.send(null)
+   	withdrawals_data = JSON.parse(request.responseText);
 
 	/*var marchant_data = $.getJSON("data.json", function(data) {
         //console.log(data);
