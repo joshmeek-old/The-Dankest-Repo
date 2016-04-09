@@ -4,23 +4,12 @@
 <script src="dataRead.js"></script>
 </head>
 <body>
-<!--<script type="text/javascript">
-    $.getJSON("data.json", function(data) {
-        console.log(data);
-		var i = 0;
-		$('body').append("Hello");
-		while ( i < 100 ) {
-			$('body').append(data.results[i].name);
-			$('body').append("\n");
-			i++
-		}
-    });
-</script>-->
-
 <script>
 
-   grabJSON();
-   print_data();
+	grabJSON();
+	print_data();
+	var merch_data = get_merchants();
+	document.write(merch_data.results[1].name);
 
 </script>
 </body>

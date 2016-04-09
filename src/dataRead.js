@@ -43,7 +43,7 @@ function get_deposits() {
 	return deposits_data;
 }
 
-function get_merchant() {
+function get_merchants() {
 	return merchant_data;
 }
 
